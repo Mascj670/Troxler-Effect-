@@ -1,0 +1,141 @@
+function setup() {
+  createCanvas(800, 600); // w,h
+  
+  noStroke(); // No stroke throughout the entire code
+  
+   angleMode(DEGREES); // Setting angle mode to degrees 
+  
+}
+
+function draw() {
+  background(220);
+  
+  focalPoint();
+  
+  troxler();
+  
+  
+  fill(167, 214, 170);
+  textAlign(CENTER);
+  textSize(20);
+  textFont('cursive');
+  text("Constant pleasure is no pleasure at all.", 0, height/2 - 10);
+  
+  
+}
+
+
+function focalPoint(){
+  
+  push();
+  
+  fill(0);
+  translate(width/2,height/2);
+  circle(0,0, 20);
+  
+  pop();
+  
+}
+
+function troxler(){
+  
+  push();
+  
+  let blonde = color(255, 239, 192);
+  blonde.setAlpha(65);
+
+  pop();
+  
+  push();
+  
+  let cottonCandy = color(255, 199, 215);
+  cottonCandy.setAlpha(80);
+ 
+  pop();
+  
+  push();
+  
+  let classicRose = color(233, 204, 237)
+  classicRose.setAlpha(90);
+ 
+  pop();
+  
+  push();
+  
+  let teaGreen = color(209, 235, 202)
+  teaGreen.setAlpha(70);
+ 
+  pop();
+  
+  push();
+  
+  let diamond = color(192, 239, 246);
+  diamond.setAlpha(95);
+ 
+  pop();
+  
+  push();
+  
+  let lightCoral = color(240, 139, 139);
+  lightCoral.setAlpha(50);
+ 
+  pop();
+  
+  push();
+  
+  let seaFoamGreen = color(166, 215, 200);
+  seaFoamGreen.setAlpha(50);
+ 
+  pop();
+  
+  push();
+  
+  let vodka = color(197, 180, 244);
+  vodka.setAlpha(50);
+ 
+  pop();
+  
+  
+   
+  translate(width/2,height/2);
+  
+  for(x = 0; x < 12; x++){
+    
+    rotate(30);
+    
+    fill(blonde);
+    ellipse(150,150,75,75);
+    
+    fill(cottonCandy); 
+    circle(175,175,45);
+    
+    fill(classicRose); 
+    circle(125,125,45);
+    
+    fill(teaGreen); 
+    circle(100,100,45);
+    
+  }
+  
+  
+  for(i = 0; i < 24; i++){
+    
+    rotate(15);
+    
+    fill(vodka);
+    circle(125, 125, 20);
+    
+    
+    fill(diamond);
+    circle(150, 150, 20);
+    
+
+    fill(lightCoral);
+    circle(175, 175, 20);
+    
+    fill(seaFoamGreen);
+    circle(100, 100, 20);
+    
+  }
+    
+}
